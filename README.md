@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-slider-awesome.svg)](https://www.npmjs.com/package/react-slider-awesome) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![](name-of-giphy.gif)
+![](example.gif)
 
 ## Install
 
