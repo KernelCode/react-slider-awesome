@@ -13,16 +13,63 @@ npm install --save react-slider-awesome
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-slider-awesome'
+import { Slider } from 'react-slider-awesome'
+
 import 'react-slider-awesome/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
+  return (
+    <Slider rtl={false}>
+      <div>
+        <img src={'./path/to/1.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/2.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/3.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/4.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/5.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/6.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/7.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/1.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/2.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/3.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/4.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/5.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/6.jpg'} />
+      </div>
+      <div>
+        <img src={'./path/to/7.jpg'} />
+      </div>
+    </Slider>
+  )
 }
+
+export default App
 ```
 
 ## License

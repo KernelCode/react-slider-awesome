@@ -1,6 +1,13 @@
 import React from 'react'
-import styles from './styles.module.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+
+
+import SliderInner from './componets/slider'
+
+export const Slider = (props) => {
+  
+
+  return <SliderInner rtl={props.rtl}>
+    {props.children}
+  </SliderInner>
 }
