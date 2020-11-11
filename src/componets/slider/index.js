@@ -3,6 +3,8 @@ import Item from '../item'
 
 import style_rtl from '../style.rtl.css'
 import style_lrt from '../style.css'
+import rightICON from '../../assets/chevron-right.svg'
+import leftICON from '../../assets/chevron-left.svg'
 const SliderInner = (props) => {
   let style = props.rtl ? style_rtl : style_lrt;
   const [pages,setPages] = useState(0);
@@ -35,9 +37,8 @@ const SliderInner = (props) => {
   let dir={
     right:style.kc_pager_right,
     left:style.kc_pager_left,
-    right_photo:"./imgs/chevron-right.svg",
-    left_photo:"./imgs/chevron-left.svg"
-   
+    right_photo:rightICON,
+    left_photo:leftICON
   }
 
   if(props.rtl){
@@ -45,8 +46,8 @@ const SliderInner = (props) => {
     dir={
       right:style.kc_pager_left,
       left:style.kc_pager_right,
-      right_photo:"./imgs/chevron-left.svg",
-      left_photo:"./imgs/chevron-right.svg"
+      right_photo:leftICON,
+      left_photo:rightICON
     }
   }
 
