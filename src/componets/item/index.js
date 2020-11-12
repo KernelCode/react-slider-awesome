@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import style_rtl from '../style.rtl.css'
 import style_lrt from '../style.css'
@@ -9,15 +9,7 @@ const Item = (props) => {
     box = style.boxNoEffects
   }
   return (
-    <div
-      className={style.box}
-      onMouseEnter={(e) => {
-        //e.currentTarget.children[0].children[0].src
-      }}
-      onMouseLeave={(e) => {
-        //props.exit();
-      }}
-    >
+    <div className={box} onMouseEnter={(e) => {}} onMouseLeave={(e) => {}}>
       {props.children}
     </div>
   )

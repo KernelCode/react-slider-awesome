@@ -24,9 +24,10 @@ import { Slider } from 'react-slider-awesome'
 import 'react-slider-awesome/dist/index.css'
 
 const App = () => {
-  /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
+  /* For Right to left set  body{  direction: rtl; }  then rtl={true|false} */
+  /* For no item effects  noEffects={true|false} */
   return (
-    <Slider rtl={false}>
+    <Slider rtl={true | false} noEffects={true | false}>
       <div>
         <img src={'./path/to/1.jpg'} />
       </div>
