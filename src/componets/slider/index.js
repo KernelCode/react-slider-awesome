@@ -3,8 +3,8 @@ import Item from '../item'
 
 import style_rtl from '../style.rtl.css'
 import style_lrt from '../style.css'
-import rightICON from '../../assets/chevron-right.svg'
-import leftICON from '../../assets/chevron-left.svg'
+import rightICON from './assets/chevron-right.svg'
+import leftICON from './assets/chevron-left.svg'
 const SliderInner = (props) => {
   let style = props.rtl ? style_rtl : style_lrt;
   const [pages,setPages] = useState(0);
