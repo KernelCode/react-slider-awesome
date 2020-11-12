@@ -18,6 +18,7 @@
   padding-right: 0.25%;
   padding-left: 0.25%;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .kc_slider .boxNoEffects {
   width: 100%;
