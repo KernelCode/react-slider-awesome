@@ -12,6 +12,8 @@
 npm install --save react-slider-awesome
 ```
 
+[Live Demo](http://altahery.com/react-slider-awesome/)
+
 ## Usage
 
 ```jsx
