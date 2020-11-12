@@ -13,7 +13,9 @@ const Item = (props) => {
   return React.Children.map(props.children, (child, index) => {
     return React.cloneElement(child, {
       key: index,
-      className: child.props.className ? box + ' ' + child.props.className : box
+      className: child.props.className
+        ? +child.props.className + ' ' + box
+        : box
     })
   })
 }
