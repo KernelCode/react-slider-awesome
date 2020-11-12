@@ -7,7 +7,7 @@ import 'react-slider-awesome/dist/index.css'
 const App = () => {
   /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
   return (
-    <Slider rtl={false} noEffects={true}>
+    <Slider rtl={false} noEffects={false}>
       <div>
         <img src={'./imgs/1.jpg'} />
       </div>
