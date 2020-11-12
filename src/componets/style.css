@@ -146,11 +146,13 @@
   }
 }
 @media only screen and (min-width: 100px) {
-  .kc_slider .box,
-  .kc_slider .boxNoEffects {
+  .kc_slider .box {
     max-width: 24.5%;
     margin-left: 0.3%;
     margin-right: 0.3%;
+  }
+  .kc_slider .boxNoEffects {
+    max-width: 24.5%;
   }
   .kc_slider .box:hover {
   }
@@ -170,11 +172,13 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .kc_slider .box,
-  .kc_slider .boxNoEffects {
+  .kc_slider .box {
     max-width: 19.5%;
     margin-left: 0%;
     margin-right: 0%;
+  }
+  .kc_slider .boxNoEffects {
+    max-width: 19.5%;
   }
   .kc_slider .box:hover {
   }
@@ -199,11 +203,11 @@
   }
 }
 @media only screen and (min-width: 700px) {
-  .kc_slider .box,
+  .kc_slider .box {
+    max-width: 16.11111%;
+  }
   .kc_slider .boxNoEffects {
     max-width: 16.11111%;
-    margin-left: 0%;
-    margin-right: 0%;
   }
   .kc_slider .box:hover {
   }
@@ -225,11 +229,13 @@
   }
 }
 @media only screen and (min-width: 800px) {
-  .kc_slider .box,
-  .kc_slider .boxNoEffects {
+  .kc_slider .box {
     max-width: 13.755555%;
     margin-left: 0%;
     margin-right: 0%;
+  }
+  .kc_slider .boxNoEffects {
+    max-width: 13.755555%;
   }
   .kc_slider .box:hover {
     transform: scale(1.08);
@@ -254,11 +260,13 @@
   }
 }
 @media only screen and (min-width: 1000px) {
-  .kc_slider .box,
-  .kc_slider .boxNoEffects {
+  .kc_slider .box {
     max-width: 12%;
     margin-left: 0%;
     margin-right: 0%;
+  }
+  .kc_slider .boxNoEffects {
+    max-width: 12%;
   }
   .kc_slider .box:hover {
     transform: scale(1.14);

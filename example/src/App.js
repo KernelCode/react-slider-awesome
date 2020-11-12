@@ -8,7 +8,7 @@ import './App.css'
 const App = () => {
   /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
   return (
-    <Slider rtl={false} noEffects={false}>
+    <Slider rtl={false} noEffects={true}>
       <div className={'my_class'}>
         <img src={'./imgs/1.jpg'} />
       </div>
