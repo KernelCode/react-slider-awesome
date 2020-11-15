@@ -76,7 +76,12 @@ const SliderInner = (props) => {
     >
       <div ref={slider} className={style.kc_slider}>
         {props.children.map((e, i) => (
-          <Item noEffects={props.noEffects} rtl={props.rtl} key={'items_' + i}>
+          <Item
+            noEffects={props.noEffects}
+            rtl={props.rtl}
+            size={props.size}
+            key={'items_' + i}
+          >
             {e}
           </Item>
         ))}

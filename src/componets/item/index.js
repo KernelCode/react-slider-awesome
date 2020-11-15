@@ -6,6 +6,9 @@ import style_lrt from '../style.css'
 const Item = (props) => {
   let style = props.rtl ? style_rtl : style_lrt
   let box = style.box
+
+  let Size = style_lrt[props.size || 'small']
+
   if (props.noEffects) {
     box = style.boxNoEffects
   }
@@ -13,7 +16,9 @@ const Item = (props) => {
   return React.Children.map(props.children, (child, index) => {
     return React.cloneElement(child, {
       key: index,
-      className: child.props.className ? child.props.className + ' ' + box : box
+      className: child.props.className
+        ? child.props.className + ' ' + box + ' ' + Size
+        : box + ' ' + Size
     })
   })
 }

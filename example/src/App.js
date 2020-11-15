@@ -7,8 +7,10 @@ import './App.css'
 
 const App = () => {
   /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
+  /* For no item effects  noEffects={true|false} */
+  /* For no num of items in slide size={small|big} */
   return (
-    <Slider rtl={false} noEffects={true}>
+    <Slider rtl={false} noEffects={false} size={'small'}>
       <div className={'my_class'}>
         <img src={'./imgs/1.jpg'} />
       </div>
