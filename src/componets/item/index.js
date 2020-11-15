@@ -7,7 +7,7 @@ const Item = (props) => {
   let style = props.rtl ? style_rtl : style_lrt
   let box = style.box
 
-  let Size = style_lrt[props.size || 'small']
+  let Size = style[props.size || 'small']
 
   if (props.noEffects) {
     box = style.boxNoEffects
