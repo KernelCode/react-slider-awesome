@@ -333,7 +333,7 @@
 /* big */
 @media only screen and (min-width: 100px) {
   .kc_slider .box.big {
-    max-width: 24.5%;
+    max-width: 44.5%;
   }
 }
 @media only screen and (min-width: 600px) {
