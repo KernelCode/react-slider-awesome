@@ -25,6 +25,7 @@ const SliderInner = (props) => {
   useEffect(() => {
     setPages(Math.round((props.children.length | 1) / visible_items))
   })
+
   let dir = {
     right: style.kc_pager_right,
     left: style.kc_pager_left,
@@ -81,6 +82,7 @@ const SliderInner = (props) => {
             rtl={props.rtl}
             size={props.size}
             key={'items_' + i}
+            len={visible_items}
           >
             {e}
           </Item>

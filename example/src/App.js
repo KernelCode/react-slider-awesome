@@ -21,7 +21,7 @@ const App = () => {
         <img src={'./imgs/3.jpg'} />
       </div>
       <div className={'my_class'}>
-        <img src={'./imgs/4.jpg'} />
+        <img src={'./imgs/7.jpg'} />
       </div>
       <div className={'my_class'}>
         <img src={'./imgs/5.jpg'} />

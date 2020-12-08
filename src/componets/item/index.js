@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import style_rtl from '../style.rtl.css'
 import style_lrt from '../style.css'

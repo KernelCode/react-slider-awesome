@@ -4,8 +4,8 @@
   width: 100%;
   flex-flow: nowrap;
   transition: all 1s cubic-bezier(0.27, 0.75, 0.71, 0.97);
-  align-items: flex-end;
   overflow-x: visible;
+  align-items: center;
 }
 .kc_slider .box {
   width: 100%;
@@ -296,7 +296,16 @@
     left: 10%;
   }
 }
-
+.kc_slider .box.big:hover {
+  transform: scale(1.07);
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.kc_slider .box.small:hover {
+  transform: scale(1.09);
+  margin-left: 0.6%;
+  margin-right: 0.6%;
+}
 /* sizes */
 
 /* small */
@@ -356,10 +365,5 @@
     max-width: 19.5%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  .kc_slider .box.big:hover {
-    transform: scale(1.07);
-    margin-left: 1%;
-    margin-right: 1%;
   }
 }
