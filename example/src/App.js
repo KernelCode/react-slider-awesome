@@ -10,7 +10,7 @@ const App = () => {
   /* For no item effects  noEffects={true|false} */
   /* For no num of items in slide size={small|big} */
   return (
-    <Slider rtl={false} noEffects={false} size={'small'}>
+    <Slider rtl={true} noEffects={true} size={'small'}>
       <div className={'my_class'}>
         <img src={'./imgs/1.jpg'} />
       </div>
