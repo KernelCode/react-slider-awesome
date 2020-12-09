@@ -23,7 +23,8 @@ const SliderInner = (props) => {
   else if (window.innerWidth > 1000) visible_items = 8
 
   useEffect(() => {
-    setPages(Math.round((props.children.length | 1) / visible_items))
+    if (props.children)
+      setPages(Math.round((props.children.length | 1) / visible_items))
   })
 
   let dir = {
@@ -41,7 +42,9 @@ const SliderInner = (props) => {
       left_photo: './assets/imgs/right.svg'
     }
   }
-
+  if (!props.children) {
+    return <div></div>
+  }
   return (
     <div
       onLoad={(e) => {

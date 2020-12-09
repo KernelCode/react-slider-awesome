@@ -11,69 +11,7 @@ const App = () => {
   /* For no num of items in slide size={small|big} */
   return (
     <Slider rtl={true} noEffects={true} size={'small'}>
-      <div className={'my_class'}>
-        <img src={'./imgs/1.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/2.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/3.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/7.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/5.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/6.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/1.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/2.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/3.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/4.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/5.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/6.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/1.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/2.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/3.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/4.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/5.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/6.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/1.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/2.jpg'} />
-      </div>
-      <div className={'my_class'}>
-        <img src={'./imgs/3.jpg'} />
-      </div>
+      {null}
     </Slider>
   )
 }
