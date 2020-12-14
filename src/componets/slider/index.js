@@ -24,22 +24,22 @@ const SliderInner = (props) => {
 
   useEffect(() => {
     if (props.children)
-      setPages(Math.round((props.children.length | 1) / visible_items))
+      setPages(Math.round((props.children.length || 1) / visible_items + 1))
   })
 
   let dir = {
     right: style.kc_pager_right,
     left: style.kc_pager_left,
-    right_photo: './assets/imgs/right.svg',
-    left_photo: './assets/imgs/left.svg'
+    right_photo: <span className={style.chevronright}></span>,
+    left_photo: <span className={style.chevronleft}></span>
   }
 
   if (props.rtl) {
     dir = {
       right: style.kc_pager_left,
       left: style.kc_pager_right,
-      right_photo: './assets/imgs/left.svg',
-      left_photo: './assets/imgs/right.svg'
+      right_photo: <span className={style.chevronright}></span>,
+      left_photo: <span className={style.chevronleft}></span>
     }
   }
   if (!props.children) {
@@ -146,9 +146,7 @@ const SliderInner = (props) => {
           }
         }}
       >
-        <div className={style.icon}>
-          <img src={dir.right_photo} />
-        </div>
+        <div className={style.icon}>{dir.right_photo}</div>
       </div>
       <div
         ref={left}
@@ -180,9 +178,7 @@ const SliderInner = (props) => {
           }
         }}
       >
-        <div className={style.icon}>
-          <img src={dir.left_photo} />
-        </div>
+        <div className={style.icon}>{dir.left_photo}</div>
       </div>
     </div>
   )

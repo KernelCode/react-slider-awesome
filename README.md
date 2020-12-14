@@ -26,7 +26,7 @@ import 'react-slider-awesome/dist/index.css'
 const App = () => {
   /* For Right to left set  body{  direction: rtl; }  then rtl={true|false} */
   /* For no item effects  noEffects={true|false} */
-  /* For no num of items in slide size={small|big} */
+  /* Number of items in slide size={small|big} */
   return (
     <Slider rtl={false} noEffects={false} size={'small'}>
       <div>

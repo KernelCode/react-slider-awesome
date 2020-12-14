@@ -11,7 +11,33 @@ const App = () => {
   /* For no num of items in slide size={small|big} */
   return (
     <Slider rtl={true} noEffects={true} size={'small'}>
-      {null}
+      <div>
+        <img src={'./imgs/1.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/2.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/3.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/4.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/5.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/6.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/4.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/5.jpg'} />
+      </div>
+      <div>
+        <img src={'./imgs/6.jpg'} />
+      </div>
     </Slider>
   )
 }
