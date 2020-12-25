@@ -189,12 +189,12 @@
 }
 @media only screen and (min-width: 100px) {
   .kc_slider .box {
-    max-width: 24.5%;
+    max-width: 30.5%;
     margin-right: 0.3%;
     margin-left: 0.3%;
   }
   .kc_slider .boxNoEffects {
-    max-width: 24.5%;
+    max-width: 30.5%;
   }
   .kc_slider .box:hover {
   }
