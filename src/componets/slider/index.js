@@ -15,12 +15,16 @@ const SliderInner = (props) => {
   const slider = useRef(null)
   const left = useRef(null)
   const right = useRef(null)
-
-  if (window.innerWidth < 600) visible_items = 4
-  else if (window.innerWidth < 700) visible_items = 5
-  else if (window.innerWidth < 800) visible_items = 6
-  else if (window.innerWidth < 1000) visible_items = 7
-  else if (window.innerWidth > 1000) visible_items = 8
+  if (props.noEffects == true) {
+    if (window.innerWidth < 600) visible_items = 4
+    else if (window.innerWidth < 700) visible_items = 5
+    else if (window.innerWidth < 800) visible_items = 6
+    else if (window.innerWidth < 1000) visible_items = 7
+    else if (window.innerWidth > 1000) visible_items = 8
+  } else {
+    if (window.innerWidth < 1000) visible_items = 6
+    else if (window.innerWidth > 1000) visible_items = 5
+  }
 
   useEffect(() => {
     if (props.children)

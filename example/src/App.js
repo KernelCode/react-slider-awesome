@@ -9,35 +9,18 @@ const App = () => {
   /* for Right to left set  body{  direction: rtl; }  then rtl={true|false} */
   /* For no item effects  noEffects={true|false} */
   /* For no num of items in slide size={small|big} */
+  let a = []
+  for (let i = 1; i <= 43; i++) a.push(i)
   return (
-    <Slider rtl={true} noEffects={true} size={'small'}>
-      <div>
-        <img src={'./imgs/1.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/2.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/3.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/4.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/5.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/6.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/4.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/5.jpg'} />
-      </div>
-      <div>
-        <img src={'./imgs/6.jpg'} />
-      </div>
+    <Slider rtl={true} noEffects={false} size={'big'}>
+      {a.map((f) => {
+        return (
+          <div>
+            <img src={'./imgs/6.jpg'} />
+            <div style={{ color: '#fff' }}>{f}</div>
+          </div>
+        )
+      })}
     </Slider>
   )
 }
