@@ -16,8 +16,7 @@ const App = () => {
       {a.map((f) => {
         return (
           <div>
-            <img src={'./imgs/6.jpg'} />
-            <div style={{ color: '#fff' }}>{f}</div>
+            <img src={'./imgs/6.png'} />
           </div>
         )
       })}

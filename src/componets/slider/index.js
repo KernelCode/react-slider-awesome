@@ -9,7 +9,8 @@ const SliderInner = (props) => {
   const [pages, setPages] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
   const [currentPagePer, setCurrentPagePer] = useState(0)
-
+  const supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints
+  var touch = supportsTouch && style.touch
   let visible_items = 0
 
   const slider = useRef(null)
@@ -56,7 +57,7 @@ const SliderInner = (props) => {
         left.current.style.display = 'none'
       }}
       onMouseEnter={(e) => {
-        if (window.innerWidth < 600) {
+        if (window.innerWidth < 600 || touch) {
           return
         }
         if (currentPage >= pages) {
@@ -73,14 +74,14 @@ const SliderInner = (props) => {
         right.current.style.opacity = '1'
       }}
       onMouseLeave={(e) => {
-        if (window.innerWidth < 600) {
+        if (window.innerWidth < 600 || touch) {
           return
         }
 
         left.current.style.opacity = '0'
         right.current.style.opacity = '0'
       }}
-      className={style.kc_slider_container}
+      className={style.kc_slider_container + ' ' + touch}
     >
       <div ref={slider} className={style.kc_slider}>
         {props.children.map((e, i) => (

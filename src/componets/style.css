@@ -410,3 +410,20 @@
     margin-right: 0%;
   }
 }
+
+.touch .kc_slider {
+  overflow-x: scroll;
+}
+.touch .kc_pager {
+  display: none;
+}
+
+.touch .kc_pager_left {
+  display: none;
+}
+.touch .kc_pager_right {
+  display: none;
+}
+.touch .page_small_view_container {
+  display: none;
+}

@@ -187,6 +187,10 @@
     transform: translateX(100%);
   }
 }
+
+.kc_slider_container .page_small_view_container {
+  display: none;
+}
 @media only screen and (min-width: 100px) {
   .kc_slider .box {
     max-width: 30.5%;
@@ -408,4 +412,21 @@
     margin-right: 0%;
     margin-left: 0%;
   }
+}
+
+.touch .kc_slider {
+  overflow-x: scroll;
+}
+.touch .kc_pager {
+  display: none;
+}
+
+.touch .kc_pager_left {
+  display: none;
+}
+.touch .kc_pager_right {
+  display: none;
+}
+.touch .page_small_view_container {
+  display: none;
 }
