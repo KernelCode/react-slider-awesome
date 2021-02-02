@@ -33,6 +33,7 @@ const SliderInner = (props) => {
       setPages(Math.round((props.children.length || 1) / visible_items + 1))
     return () => {
       setCurrentPage(1)
+      setCurrentPagePer(0)
     }
   }, [props])
 
