@@ -31,7 +31,10 @@ const SliderInner = (props) => {
   useEffect(() => {
     if (props.children)
       setPages(Math.round((props.children.length || 1) / visible_items + 1))
-  })
+    return () => {
+      setCurrentPage(1)
+    }
+  }, [props])
 
   let dir = {
     right: style.kc_pager_right,
