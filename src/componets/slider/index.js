@@ -9,6 +9,7 @@ const SliderInner = (props) => {
   const [pages, setPages] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
   const [currentPagePer, setCurrentPagePer] = useState(0)
+  const [isOn, setIsOn] = useState(false)
   const supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints
   var touch = supportsTouch && style.touch
   let visible_items = 0
@@ -72,6 +73,7 @@ const SliderInner = (props) => {
         }
         left.current.style.opacity = '1'
         right.current.style.opacity = '1'
+        setIsOn(true)
       }}
       onMouseLeave={(e) => {
         if (window.innerWidth < 600 || touch) {
@@ -80,6 +82,28 @@ const SliderInner = (props) => {
 
         left.current.style.opacity = '0'
         right.current.style.opacity = '0'
+        setIsOn(false)
+      }}
+      onMouseOver={(e) => {
+        if (isOn) {
+          return
+        }
+        if (window.innerWidth < 600 || touch) {
+          return
+        }
+        if (currentPage >= pages) {
+          right.current.style.display = 'none'
+        } else {
+          right.current.style.display = 'block'
+        }
+        if (currentPage <= 1) {
+          left.current.style.display = 'none'
+        } else {
+          left.current.style.display = 'block'
+        }
+        left.current.style.opacity = '1'
+        right.current.style.opacity = '1'
+        setIsOn(true)
       }}
       className={style.kc_slider_container + ' ' + touch}
     >
