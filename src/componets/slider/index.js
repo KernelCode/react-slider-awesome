@@ -34,6 +34,7 @@ const SliderInner = (props) => {
     return () => {
       setCurrentPage(1)
       setCurrentPagePer(0)
+      slider.current.style.transform = `translateX(0%)`
     }
   }, [props])
 
