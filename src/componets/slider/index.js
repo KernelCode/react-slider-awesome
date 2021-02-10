@@ -15,6 +15,7 @@ const SliderInner = (props) => {
   let visible_items = 0
 
   const slider = useRef(null)
+
   const left = useRef(null)
   const right = useRef(null)
   if (props.noEffects == true) {
@@ -31,10 +32,13 @@ const SliderInner = (props) => {
   useEffect(() => {
     if (props.children)
       setPages(Math.round((props.children.length || 1) / visible_items + 1))
+
     return () => {
-      setCurrentPage(1)
-      setCurrentPagePer(0)
-      //if (slider.current) slider.current.style.transform = `translateX(0%)`
+      if (!props.noRefresh) {
+        setCurrentPage(1)
+        setCurrentPagePer(0)
+        if (slider.current) slider.current.style.transform = `translateX(0%)`
+      }
     }
   }, [props])
 
