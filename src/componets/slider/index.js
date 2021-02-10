@@ -34,11 +34,11 @@ const SliderInner = (props) => {
       setPages(Math.round((props.children.length || 1) / visible_items + 1))
 
     return () => {
-      if (!props.noRefresh) {
-        setCurrentPage(1)
-        setCurrentPagePer(0)
-        if (slider.current) slider.current.style.transform = `translateX(0%)`
-      }
+      //if (!props.noRefresh) {
+      setCurrentPage(1)
+      setCurrentPagePer(0)
+      //if (slider.current) slider.current.style.transform = `translateX(0%)`
+      //}
     }
   }, [props])
 
