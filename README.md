@@ -1,4 +1,4 @@
-# react-slider-awesome
+# react-slider-awesome (Abandoned) 
 
 > the best react carousel
 
